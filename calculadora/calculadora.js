@@ -37,16 +37,16 @@ function Multiplicacao(a , b)
 } 
 
 
-function subtração(a , b) 
+function Subtracao(a , b) 
 { 
-    console.log (a - b) 
+    return a-b;
 } 
 
 
 
-function divisão(a , b) 
+function Divisao(a , b) 
 { 
-    console.log (a / b) 
+    return a/b; 
 }
 
 function calcular(){
@@ -57,6 +57,12 @@ function calcular(){
             break;
         case '*':
             resultado = Multiplicacao(num1,num2);
+            break;
+        case '-':
+            resultado = Subtracao(num1,num2);
+            break;
+        case "/":
+            resultado = Divisao(num1,num2);
             break;
         default:
             break;
